@@ -10,8 +10,8 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import Undo from '@ckeditor/ckeditor5-undo/src/undo';
+import TextColor from 'ckeditor-text-color-select/src/textcolor';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -27,7 +27,7 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	Alignment,
 	Code,
-	Highlight
+	TextColor
 ];
 
 // Editor configuration.
@@ -41,7 +41,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'highlight',
+			'textcolor',
 			'|',
 			'alignment:left',
 			'alignment:center',
